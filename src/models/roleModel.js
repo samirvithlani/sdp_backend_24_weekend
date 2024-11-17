@@ -12,6 +12,11 @@ const roleSchema = new Schema({
         type:Schema.Types.ObjectId,
         ref:'Permission'
     }],
+    status:{
+        type: String,
+        enum: ['active', 'inactive'],
+        default: 'active'
+    }
 
 
 
